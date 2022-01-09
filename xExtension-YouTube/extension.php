@@ -216,7 +216,8 @@ class YouTubeExtension extends Minz_Extension
                 height="' . $this->height . '" 
                 src="' . $url . '" 
                 frameborder="0" 
-                allowFullScreen></iframe>';
+                allowFullScreen
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>';
 
         if ($this->showContent) {
             $doc = new DOMDocument();
